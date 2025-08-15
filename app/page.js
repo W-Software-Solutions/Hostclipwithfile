@@ -59,7 +59,7 @@ export default function Home() {
         if (data.success) {
           setQrCode(data.qrCode);
           setSessionId(data.sessionId);
-          setSessionURL(`http://localhost:3000/session/${data.sessionId}`);
+          setSessionURL(`https://hostclip.vercel.app/session/${data.sessionId}`);
         } else {
           console.error("Failed to get QR code:", data.message);
         }
@@ -297,3 +297,4 @@ export default function Home() {
     </>
   );
 }
+
